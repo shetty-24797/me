@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>
+                    <span id="name-kannada" class="name-kannada" onclick="translateToKannada()">ಭರತ್ ಶೆಟ್ಟಿ</span>
+                    <span class="name-separator"> | </span>
+                    <span id="name-english" class="name-english" onclick="translateToEnglish()">Bharath Shetty</span>
+                </h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hello, I'm <span class="highlight" id="typed-name">Bharath Shetty</span>
+                </h1>
+                <p class="hero-subtitle">
+                    The person your frontend calls when it needs help
+                </p>
+                <p class="hero-description">
+                    Backend developer who lives in the land of APIs, databases, and mysterious logs that say "everything's fine" right before production crashes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn-primary">Learn More</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="Bharath Shetty" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        <strong>🧠 About Me</strong><br>
+                        Hi, I'm Bharath — the person your frontend calls when it needs help.
+                    </p>
+                    <p>
+                        I'm a backend developer, which means I live in the land of APIs, databases, and mysterious logs that say "everything's fine" right before production crashes.
+                    </p>
+                    <p>
+                        When I'm not debugging why an if(true) block didn't execute, I'm probably architecting systems that actually scale, optimizing performance, or making sure your cat photo uploads are stored securely (and redundantly) in the cloud.
+                    </p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">🛠️ What I Do</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.8rem;"><strong>API Design:</strong> I make endpoints so clean, REST feels refreshed.</li>
+                            <li style="margin-bottom: 0.8rem;"><strong>Database Whispering:</strong> PostgreSQL, MySQL, MongoDB — I speak fluent JOIN.</li>
+                            <li style="margin-bottom: 0.8rem;"><strong>Cloud Stuff:</strong> AWS, GCP, Docker – if it has a dashboard, I've broken it at least once.</li>
+                            <li style="margin-bottom: 0.8rem;"><strong>IoT & Real-Time:</strong> I've made machines talk to servers faster than you can say "latency".</li>
+                            <li style="margin-bottom: 0.8rem;"><strong>Writing Code That Works™:</strong> With unit tests that occasionally pass and logs that occasionally help.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin: 2rem 0;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">🚀 My Philosophy</h3>
+                        <p style="font-style: italic;">Write code like nobody's watching.<br>Push to prod like everybody is.</p>
+                    </div>
+
+                    <div style="margin: 2rem 0;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">🐞 Debugging Style</h3>
+                        <p>I don't make bugs. I create unexpected features that foster exploration.</p>
+                    </div>
+
+                    <div style="margin: 2rem 0;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">🤝 Work With Me</h3>
+                        <p>Whether you're building a scalable system, integrating with some overly enthusiastic third-party API, or just want someone to tell you your microservices aren't really "micro" — I'm your guy.</p>
+                    </div>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Backend Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>bharathkumar24797@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <span>APIs • Databases • Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements</h2>
+                <p class="section-subtitle">Milestones I'm proud of</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Production Zero-Downtime</h3>
+                    <p>Successfully deployed scalable backend systems without breaking production (mostly). My logs now say "everything's fine" and actually mean it.</p>
+                    <span class="achievement-date">2024</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>API Performance Optimization</h3>
+                    <p>Reduced API response times from "coffee-break" to "blink-and-miss-it" through strategic caching and database optimization.</p>
+                    <span class="achievement-date">2023</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Architecture Master</h3>
+                    <p>Built cloud-native applications that scale automatically. Only broke AWS dashboard twice during the learning process.</p>
+                    <span class="achievement-date">2022</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Bug Whisperer Certification</h3>
+                    <p>Achieved legendary status in debugging mysterious production issues. Can spot a race condition from 100 lines of code away.</p>
+                    <span class="achievement-date">2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some cool stuff I've built</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shetty-24797/know-your-leader" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link demo-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Know Your Leader</h3>
+                    <p>A comprehensive platform to learn about political leaders and their policies. Because democracy works better when people actually know who they're voting for.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Database</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shetty-24797" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://crackers.patakiangadi.com/" target="_blank" class="project-link demo-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Pataki Angadi Crackers</h3>
+                    <p>A festive web application for exploring crackers and fireworks. Because who doesn't love a good celebration with some sparkles and responsible pyrotechnics? 🎆</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Web Design</span>
+                        <span class="tech-tag">Frontend</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shetty-24797" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link demo-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>More Backend Magic</h3>
+                    <p>Currently brewing some exciting backend projects involving APIs, microservices, and database optimization. Plus exploring IoT devices that can make coffee automatically!</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <p class="section-subtitle">What I love to do in my free time</p>
+            </div>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-table-tennis"></i>
+                    </div>
+                    <h3>Badminton</h3>
+                    <p>Smashing shuttlecocks with the same precision I debug code. Quick reflexes on court, quick fixes in production.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-baseball-ball"></i>
+                    </div>
+                    <h3>IPL & RCB Support</h3>
+                    <p>Eternal optimist supporting Royal Challengers Bangalore. Every season is "our year" - just like every deployment is "definitely going to work this time."</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Peak Conquering</h3>
+                    <p>Successfully completed Kudremukha and Netravathi peaks. Turns out debugging mountain trails is easier than debugging legacy code.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Side Project Collecting</h3>
+                    <p>Accumulating unfinished projects faster than I complete them. Currently at 47 repos and counting.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Political Discussions</h3>
+                    <p>Passionate about political discourse and democratic processes. Building "Know Your Leader" wasn't just a project - it's a mission to make democracy more informed.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Optimization</h3>
+                    <p>Making queries run faster than they have any right to. My love language is a well-optimized JOIN.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Find me on social media or send me a message</p>
+            </div>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/bharathshetty" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/shetty-24797" target="_blank" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://twitter.com/shetty__bharath" target="_blank" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://instagram.com/shetty__bharath" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:bharathkumar24797@gmail.com" class="social-link email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Bharath Shetty. Made with <i class="fas fa-heart"></i> and way too much caffeine.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
