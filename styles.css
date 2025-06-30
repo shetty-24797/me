@@ -53,6 +53,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
+    min-height: 40px;
+    justify-content: flex-start;
 }
 
 .name-kannada, .name-english {
@@ -708,6 +710,14 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .nav-container {
+        padding: 0 15px;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -742,33 +752,85 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .nav-logo h2 {
+        font-size: 1.2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.3rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    .name-kannada, .name-english {
+        font-size: 0.9rem;
+        padding: 0.1rem 0.3rem;
+    }
+    
+    .name-separator {
+        font-size: 0.8rem;
+        display: inline-block;
+    }
+
+    .hero {
+        padding: 80px 0 40px;
+        min-height: 90vh;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+        padding: 0 15px;
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
     }
 
     .hero-buttons {
         justify-content: center;
+        gap: 0.8rem;
     }
 
     .profile-image {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
     }
 
     .section-title {
         font-size: 2rem;
     }
 
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
     .achievements-grid,
     .projects-grid,
     .hobbies-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .achievement-card,
+    .project-card,
+    .hobby-card {
+        padding: 1.5rem;
     }
 
     .social-links {
@@ -776,46 +838,266 @@ section {
     }
 
     .social-link {
-        padding: 0.8rem 1.5rem;
+        padding: 0.8rem 1.2rem;
         font-size: 0.9rem;
     }
 
     .personal-info {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
-    
+
+    .info-item {
+        padding: 0.8rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav-container {
+        padding: 0 10px;
+    }
+
     .nav-logo h2 {
+        font-size: 1rem;
         flex-direction: column;
         gap: 0.2rem;
-        text-align: center;
+    }
+    
+    .name-kannada, .name-english {
+        font-size: 0.8rem;
+        padding: 0.1rem 0.2rem;
     }
     
     .name-separator {
         display: none;
     }
-}
 
-@media (max-width: 480px) {
+    .hero {
+        padding: 70px 0 30px;
+        min-height: 85vh;
+    }
+
+    .hero-container {
+        padding: 0 10px;
+        gap: 1.5rem;
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 0.8rem;
     }
 
     .btn-primary,
     .btn-secondary {
         width: 100%;
-        max-width: 200px;
+        max-width: 220px;
         text-align: center;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .achievement-card,
+    .project-card,
+    .hobby-card {
+        padding: 1.2rem;
+    }
+
+    .achievement-card h3,
+    .project-card h3,
+    .hobby-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .achievement-card p,
+    .project-card p,
+    .hobby-card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .social-links {
+        gap: 0.8rem;
     }
 
     .social-link {
         flex-direction: column;
         gap: 0.3rem;
-        padding: 1rem;
+        padding: 0.8rem;
         font-size: 0.8rem;
+        min-width: 80px;
+    }
+
+    .social-link i {
+        font-size: 1.2rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .info-item {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 8px;
+    }
+
+    .nav-container {
+        padding: 0 8px;
+    }
+
+    .nav-logo h2 {
+        font-size: 0.9rem;
+    }
+    
+    .name-kannada, .name-english {
+        font-size: 0.75rem;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        max-width: 200px;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .profile-image {
+        width: 130px;
+        height: 130px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .achievement-card,
+    .project-card,
+    .hobby-card {
+        padding: 1rem;
+    }
+
+    .social-link {
+        padding: 0.6rem;
+        font-size: 0.75rem;
+        min-width: 70px;
+    }
+}
+
+/* Fix for text overflow and ensure proper spacing */
+@media (max-width: 768px) {
+    .hero-title,
+    .section-title {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .hero-description,
+    .achievement-card p,
+    .project-card p,
+    .hobby-card p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .nav-logo h2 {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Ensure proper touch targets */
+    .nav-link {
+        padding: 0.5rem 0;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        min-height: 44px;
+    }
+
+    .social-link {
+        min-height: 44px;
+    }
+
+    /* Improve readability */
+    .about-text ul li {
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+    }
+
+    /* Fix potential horizontal scroll */
+    .hero-container,
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 } 
